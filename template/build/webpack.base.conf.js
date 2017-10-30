@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const getClientEnvironment = require('./env')
 
 // 这里可以设置cdn url
 var publicUrl = ''
