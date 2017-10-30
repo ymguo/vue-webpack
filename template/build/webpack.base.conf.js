@@ -1,8 +1,14 @@
 'use strict'
 const path = require('path')
+const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+
+// 这里可以设置cdn url
+var publicUrl = ''
+// Get environment variables to inject into our app.
+var env = getClientEnvironment(publicUrl)
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -76,5 +82,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin(env.stringified)
+  ]
 }

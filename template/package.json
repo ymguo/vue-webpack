@@ -15,7 +15,12 @@
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue-router": "^3.0.1"{{/router}},
+    "axios": "^0.17.0",
+    "lodash": "^4.17.4",
+    "mint-ui": "^2.2.9",
+    "query-string": "^5.0.1",
+    "weixin-js-sdk": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
