@@ -1,0 +1,51 @@
+@import '../variable/color.less';
+
+.ellipsis(@w:auto) {
+    width: @w;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.ellipsisLn(@line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+}
+.text_wrap() {
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.hyphens() {
+    word-wrap:break-word;
+    -webkit-hyphens:auto;
+    hyphens:auto;
+} 
+
+.text_double_line(@fontSize: .16rem; @color: @black-87) {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    white-space: nowrap;
+    &:before, 
+    &:after{
+        content: '';
+        display: inline-block;
+        width: @fontSize * 1.6;
+        height: 1px;
+        margin: 0 4px;
+        background-color: @color;
+        transform: scaleY(.5);
+        transform-origin: 50% 0;
+    }
+    span{
+        color: @color;
+        font-size: @fontSize;
+        font-family: StSongTi;
+        max-width: 12em;
+        font-weight: 400;
+    }
+}

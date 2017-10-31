@@ -1,0 +1,160 @@
+@import "./fn";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent!important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%
+}
+
+ul,
+ol {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+fieldset,
+img {
+  border: 0
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none
+}
+
+header,
+section,
+footer,
+nav {
+  display: block;
+}
+
+i {
+  display: block;
+  font-style: normal;
+}
+
+html,
+body {
+  min-height: 100%
+}
+
+img {
+  display: block
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.666667px*2;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px*2;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px*2;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 53.3333335px*2;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px*2;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 58.6666666px*2;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 69.3333333px*2;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px*2;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.3333333px*2;
+  }
+}
+
+//fix 第三方组件样式兼容
+.mint-indicator-wrapper{
+  font-size: 0;
+}
+
+.mint-msgbox{
+  border-radius: 6px;
+  .mint-msgbox-confirm,
+  .mint-msgbox-confirm:active{
+    color: @fawn;
+  }
+  .mint-msgbox-title{
+    color: @black-87;
+  }
+  .mint-msgbox-message{
+    color: @black-54;
+  }
+}
+
+//提升 小弹窗的 层级优先度
+.mint-toast{
+  z-index: 9999!important;
+}
+.mint-indicator{
+  z-index: 9999!important;
+  position: relative!important;
+}
