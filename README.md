@@ -1,3 +1,5 @@
+# 基于官方cli，加入了一些工具方法
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
