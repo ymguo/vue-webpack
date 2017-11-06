@@ -75,6 +75,8 @@
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
     "chai": "^4.1.2",
     "sinon": "^4.0.0",
     "sinon-chai": "^2.8.0",
