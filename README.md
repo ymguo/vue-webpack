@@ -1,3 +1,9 @@
+> git clone git@192.168.2.101:guo_tao/wz-account-vue.git
+> vue init ~/path/to/your-repository your-project-name
+
+# 在不同环境build的时 加入对应的真实api服务url
+VUE_APP_SERVER_URL=your://api.project.url cnpm run build
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
