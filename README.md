@@ -1,4 +1,5 @@
-> git clone git@192.168.2.101:guo_tao/sketch-zh-vue.git 
+#### clone to local, then use vue cli to init
+> git clone git@192.168.2.101:guo_tao/sketch-zh-vue.git   
 > vue init ~/path/to/your-repository your-project-name
 
 #### 在不同环境build的时 加入对应的真实api服务url
